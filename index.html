@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="part-logo">
+      <!-- <img src="./images/logo.svg" alt="" class="logo" /> -->
+    </div>
+    <div class="part-form">
+      <div class="part-left">
+        <div class="part-bill">
+          <form action="" class="bill" id="bill-form">
+            <label for="bill-amount">Bill</label>
+            <input type="number" id="bill-amount" name="bill-amount" min="0" />
+            <p id="warning-message" class="hidden">
+              Please enter only a number value that is bigger than zero!
+            </p>
+          </form>
+        </div>
+        <div class="part-tip">
+          <form action="" class="tip-input">
+            <label for="tip-input">Select Tip %</label>
+            <div class="tip-input-buttons">
+              <input type="button" class="perc" value="5%" />
+              <input type="button" class="perc" value="10%" />
+              <input type="button" class="perc" value="15%" />
+              <input type="button" class="perc" value="25%" />
+              <input type="button" class="perc" value="50%" />
+              <input
+                type="number"
+                id="custom-perc"
+                class="perc custom"
+                placeholder="Custom"
+                min="1"
+              />
+            </div>
+            <p id="warning-message-custom-tip" class="hidden">
+              Please enter only a number value that is bigger than or equal to
+              zero!
+            </p>
+          </form>
+        </div>
+        <div class="part-people">
+          <form action="" class="people">
+            <label for="people-count">Number of People</label>
+            <input
+              type="number"
+              id="people-count"
+              name="people-count"
+              min="1"
+            />
+            <p id="warning-message-people" class="hidden">
+              Please enter only a number value that is bigger than zero!
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="part-right">
+        <div class="tip-amount">
+          <div class="tip-amount text">
+            <h2 class="tip-amount-title">Tip Amount</h2>
+            <h4 class="tip-amount-text">/ person</h4>
+          </div>
+          <div class="tip-amount number">
+            <p id="tip-person" class="tip-amount-number">0</p>
+          </div>
+        </div>
+        <div class="total-amount">
+          <div class="total-amount text">
+            <h2 class="total-amount-title">Total</h2>
+            <h4 class="total-amount-text">/ person</h4>
+          </div>
+          <div class="total-amount number">
+            <p id="total-person" class="total-amount-number">0</p>
+          </div>
+        </div>
+        <div class="reset">
+          <button class="reset-btn" id="reset-button">RESET</button>
+        </div>
+      </div>
+      <!-- Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount / -->
+      <!-- person Total / person Reset -->
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ceren Şahin</a>.
+    </div>
+
+    <script defer src="./script.js"></script>
+  </body>
+</html>
